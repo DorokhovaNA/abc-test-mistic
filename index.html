@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дата смерти 2021</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">    
+</head>
+<body>
+    
+        <div id="wrapper" class="wrapper">
+            <section class="main container">
+                <div class="main-content">
+                    <h4 class="main__title">Лучшие астрологи и экстрасенсы Румынии</h4>
+                    <hr>
+                    <h4 class="main__title main__title_grey">Точность прогноза: 97%</h4>
+                    <div class="main__img">
+                        <img class="main__icon" src="img/icon1.svg" alt="icon">
+                        <img class="main__photo" src="img/woman1.png" alt="woman">
+                    </div>
+                    <h2 class="forecast__title">Вас беспокоит вопрос о том,<br><span class="forecast__title forecast__title_upper">когда Вы покинете этот Мир и при каких обстоятельствах?</span></h2>
+                    <div class="btn-block">
+                        <button class="btn-block__btn">Да</button>
+                        <button class="btn-block__btn btn-block__btn-grad1">Нет</button>
+                    </div>
+                    <h4 class="main__title main__title_padding">Онлайн предсказание</h4>
+                </div>
+                <div class="main-block">
+                    <img class="main-block__img" src="img/hands.png" alt="hands">
+                    <h4 class="main-block__subtitle">Позвольте нам раскрыть эту волнующую тайну и
+                        <span class="main-block__subtitle_color">с&nbsp;точностью определить дату и время вашей смерти,</span>
+                         а также предшествующую этому событию причину
+                    </h4>
+                </div>
+                <div class="img-content">
+                    <h4 class="img-content__text">Многие не верят предсказаниям и мы решили доказать каждому,<br>
+                        <span class="img-content__text_color">что прогноз может изменить жизнь любого человека!</span>
+                    </h4>
+                </div>              
+            </section>
+        </div>
+        <div id="block">
+            <div class="block container" id="block1"> 
+                <div class="block-quest">
+                    <h2 class="block-quest__title">Боитесь ли Вы умереть?</h2>
+                    <div class="block-quest__flex">
+                        <button id="button" data-next="block2" class="block-quest__btn">Да</button>
+                        <button data-next="block2" class="block-quest__btn block-quest__btn-grad1">Нет</button>
+                    </div>
+                    <h6 class="block-quest-pagination">Вопрос 1-5</h6>
+                </div>
+                <img class="block-quest__img_right" src="img/eye-1.svg" alt="eye">
+                <div class="block-quest__footer">
+                    <img class="block-quest__footer_img" src="img/rune1.svg" alt="rune"> 
+                    <h4 class="block-quest__footer_text">Вы, конечно, умрете.<br>И все, с кем вы знакомы, тоже однажды умрут.</h4>  
+                    <img class="block-quest__footer_img" src="img/rune2.svg" alt="rune">
+                </div> 
+                <img class="block-quest__img_left" src="img/eye.svg" alt="eye">
+            </div> 
+            <div class="block _hidden" id="block2">
+                <h4 class="block-quest__footer_text block-quest__footer_text_width">Мы расскажем Вам не только подробности вашей смерти, но также поможем Вам избежать этой ужасной даты и продлить вашу жизнь на многие годы.</h4>
+                <img class="block-quest__img_right block-quest__img_right_position" src="img/eye-1.svg" alt="eye">
+                <hr>
+                <div class="block-quest block-quest_padding">
+                    <h2 class="block-quest__title block-quest__title_padding">Когда Вы чувствуете себя наиболее комфортно?</h2>
+                    <div class="block-quest__flex block-quest__flex_position">
+                        <button id="button" data-next="block3" class="block-quest__btn">Утро</button>
+                        <button id="button" data-next="block3" class="block-quest__btn block-quest__btn-grad1">День</button>
+                        <button id="button" data-next="block3" class="block-quest__btn block-quest__btn-grad2">Вечер</button>
+                        <button id="button" data-next="block3" class="block-quest__btn block-quest__btn-grad3">Ночь</button>
+                    </div>
+                    <h6 class="block-quest-pagination block-quest-pagination_padding">Вопрос 2-5</h6>
+                    <img class="block-quest__img_left block-quest__img_left_position" src="img/eye.svg" alt="eye">
+                </div>    
+            </div>
+            <div class="block _hidden" id="block3">
+                <h4 class="block-quest__footer_text block-quest__footer_text_width">Уже совсем скоро Вы узнаете много интересного о своем будущем!</h4>
+                <img class="block-quest__img_right block-quest__img_right_position" src="img/eye-1.svg" alt="eye">
+                <hr>
+                <div class="block-quest block-quest_padding">
+                    <h2 class="block-quest__title block-quest__title_padding">Укажите свою дату рождения:</h2>
+                    <div class="block-quest__flex block-quest__flex_form">
+                        <form class="block__form" action="#">
+                        <!--<input id="days" type="number" required min="1" max="31"> -->
+                            <select class="select__input" id = "days" required></select><br>
+                            <select class="select__input" id = "months" required></select><br>
+                            <select class="select__input" id = "years" required></select><br>
+                            <button type="submit" id="startPrel1" data-next="block4" class="block-quest__btn block-quest__btn_form">Далее</button>
+                        </form>   
+                    </div>
+                    <h6 class="block-quest-pagination block-quest-pagination_padding">Вопрос 3-5</h6>
+                    <img class="block-quest__img_left block-quest__img_left_position" src="img/eye.svg" alt="eye">
+                </div>    
+            </div>
+            <div class="block _hidden" id="block4">
+                <div class="hide preloader-first">
+                    <div class="loadingio-spinner-spinner-ozwwmh3m16"><div class="ldio-84nb0sow54">
+                        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                    </div>
+                    <h4 class="preloader__title">Loading</h4>   
+                </div>
+                <div class="block_4 hide">
+                    <h4 class="block-quest__footer_text block-quest__footer_text_width">Смерть родного человека – одно из тяжелейших испытаний в жизни каждого из нас!</h4>
+                    <img class="block-quest__img_right block-quest__img_right_position" src="img/eye-1.svg" alt="eye">
+                    <hr>
+                    <div class="block-quest block-quest_padding">
+                        <h2 class="block-quest__title block-quest__title_pding">Снятся ли Вам умершие люди?</h2>
+                        <div class="block-quest__flex block-quest__flex_margin">
+                            <button id="button" data-next="block5" class="block-quest__btn">Да</button>
+                            <button id="button" data-next="block5" class="block-quest__btn block-quest__btn-grad1">Нет</button>
+                            <button id="button" data-next="block5" class="block-quest__btn block-quest__btn-grad2">Иногда</button>
+                        </div>
+                        <h6 class="block-quest-pagination block-quest-pagination_padding">Вопрос 4-5</h6>
+                        <img class="block-quest__img_left block-quest__img_left_position" src="img/eye.svg" alt="eye">
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="block _hidden" id="block5">
+                <div class="choiceYear"></div>
+                <div class="anim-show">
+                    <h4 class="block-quest__footer_text block-quest__footer_text_anim" id="label1">По вам скучает очень близкий человек, которого больше нет в мире живых.</h4>
+                    <h4 class="block-quest__footer_text block-quest__footer_text_anim" id="label2">По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это дедушка или бабушка.</h4>
+                    <h4 class="block-quest__footer_text block-quest__footer_text_anim" id="label3">По вам скучает очень близкий человек, которого больше нет в мире живых. Возможно это кто-то из Ваших родителей.</h4>
+                </div>
+                <img class="block-quest__img_right block-quest__img_right_position" src="img/eye-1.svg" alt="eye">
+                <hr>
+                <div class="block-quest block-quest_padding">
+                    <h2 class="block-quest__title block-quest__title_padding">Запись, которую Вы услышите, может шокировать людей с неокрепшей психикой. Вы готовы узнать, что ждет именно Вас?</h2>
+                    <div class="block-quest__flex block-quest__flex_margin_end">
+                        <button id="startPrel2" data-next="block6" class="block-quest__btn">Да</button>
+                        <button id="startPrel2" data-next="block6" class="block-quest__btn block-quest__btn-grad1">Затрудняюсь ответить</button>
+                    </div>
+                    <h6 class="block-quest-pagination block-quest-pagination_padding">Вопрос 5-5</h6>
+                    <img class="block-quest__img_left block-quest__img_left_position" src="img/eye.svg" alt="eye">
+                </div>    
+            </div>
+            <div class="block _hidden" id="block6">
+                <div class="hide preloader-second">
+                    <img class="preloader__image" role="img" src="img/microphone.svg" >
+                    <div class="preloader__stripe"></div>
+                    <h4 class="preloader__title">20%</h4>
+                    <h4 class="preloader__subtitle">Запись аудиосообщения</h4>    
+                </div>
+                <div class="text hide">
+                    <h4 class="text__subtitle text__subtitle_block">Спасибо за Ваши ответы!<br>
+                        <span class="text__subtitle text__subtitle_bold">Мы подготовили для Вас персональную аудио запись с Вашим прогнозом.</span>
+                    </h4>
+                    <h4 class="text__subtitle text__subtitle_color">Вы можете узнать, как повлиять на события, которые ожидают вас в ближайшем будущем.</h4>
+                    <div class="text__main">
+                        <h3 class="text__title">Первое значимое событие может произойти уже
+                            <span id='date' class="text__title text__title_date"></span>
+                            <span class="text__title text__title_lower">&nbsp;, Вам надо быть готовым, что бы последствия не оказались необратимыми.</span>    
+                        </h3>    
+                    </div>
+                    <h4 class="text__subtitle text__subtitle_color">Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона.<br>
+                        Прослушайте важную информацию!</h4>
+                    <button class="text__button" type="submit" id="btn-end" data-next="block7">Позвонить и прослушать</button> 
+                    <h6 class="footer__text">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI,</h6>  
+                </div>     
+            </div>
+            <div class="block _hidden" id="block7">
+                <h5 class="text__title">Итак, Вас ожидает некто таинственный:</h5>
+                <div>
+                    <h4 class="result container"></h4>
+                    <h4 class="result__height container"></h4>
+                    <h4 class="result__hair_color container"></h4>
+                    <h4 class="result__eye_color container"></h4>
+                </div>
+            </div>  
+        </div>       
+    <script src="script.js"></script>   
+</body>
+</html>
